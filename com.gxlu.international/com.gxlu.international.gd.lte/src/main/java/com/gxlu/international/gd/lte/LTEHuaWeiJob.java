@@ -25,7 +25,7 @@ public class LTEHuaWeiJob {
 		String[] files = ftp.dir();
 		ftp.quit();
 		String dateStr = CommonTool.FormatDate(new Date());
-		dateStr="20140326"; //测试文件数据
+//		dateStr="20140326"; //测试文件数据
 		
 		for (int i = 0; i < files.length; i++) {
 			String fileName = files[i];
