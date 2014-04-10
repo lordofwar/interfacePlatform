@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.gxlu.interfacePlatform.schedule">
+	<class name="com.gxlu.interfacePlatform.schedule.Schedule" table="xb_interface_schedule" >
+		<id name="id" column="ID">
+			<generator class="native" >
+				<param name="sequence">S_xb_interface_schedule</param>
+			</generator>
+		</id>
+		<property name="METACATEGORY" type="java.lang.String">
+            <column name="METACATEGORY" length="100">
+                <comment>METACATEGORY</comment>
+            </column>
+        </property>
+        <property name="Interfacelibid" type="java.lang.Long">
+            <column name="INTERFACELIBID" precision="18" scale="0">
+                <comment>INTERFACELIBID</comment>
+            </column>
+        </property>
+        <property name="lastRunTime" type="java.util.Date">
+            <column name="LASTSTARTEDTIME" length="7">
+                <comment>Last Started Time</comment>
+            </column>
+        </property>
+        <property name="lastFinishTime" type="java.util.Date">
+            <column name="LASTFINISHEDTIME" length="7">
+                <comment>Last Finished Time</comment>
+            </column>
+        </property>
+        <property name="nextRunTime" type="java.util.Date">
+            <column name="NEXTRUNTIME" length="7">
+                <comment>Next Run Time</comment>
+            </column>
+        </property>
+        <property name="runPeriod" type="java.lang.Long">
+            <column name="RUNPERIOD" precision="11" scale="0">
+                <comment>Run Period</comment>
+            </column>
+        </property>
+        <property name="status" type="java.lang.Integer">
+            <column name="STATUS" precision="5" scale="0">
+                <comment>Status</comment>
+            </column>
+        </property>
+        <property name="Progress" type="java.lang.Integer">
+            <column name="PROGRESS" precision="8" scale="0">
+                <comment>Progress</comment>
+            </column>
+        </property>
+        <property name="comments" type="java.lang.String">
+            <column name="COMMENTS" length="4000">
+                <comment>Remark</comment>
+            </column>
+        </property>
+        <property name="rmiaddr" type="java.lang.String">
+            <column name="rmiaddr" length="255">
+                <comment>Remark</comment>
+            </column>
+        </property>
+	</class>
+</hibernate-mapping>

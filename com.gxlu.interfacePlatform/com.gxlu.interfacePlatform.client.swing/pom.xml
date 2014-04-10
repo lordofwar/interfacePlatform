@@ -1,0 +1,75 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<artifactId>com.gxlu.interfacePlatform</artifactId>
+		<groupId>com.gxlu.interfacePlatform</groupId>
+		<version>0.0.1-SNAPSHOT</version>
+		<relativePath>..</relativePath>
+	</parent>
+	<artifactId>com.gxlu.interfacePlatform.client.swing</artifactId>
+	<description>Interface Client base on Swing Tech.</description>
+	<dependencies>
+		<dependency>
+			<groupId>com.gxlu.interfacePlatform</groupId>
+			<artifactId>com.gxlu.interfacePlatform.schedule</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.gxlu.interfacePlatform</groupId>
+			<artifactId>com.gxlu.interfacePlatform.schedule.hibernate</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+			<version>2.6</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.gxlu.interfacePlatform</groupId>
+			<artifactId>com.gxlu.interfacePlatform.client.resource</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.gxlu.interfacePlatform</groupId>
+			<artifactId>com.gxlu.interfacePlatform.schedule.hibernate.oracle</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.gxlu.interfacePlatform</groupId>
+			<artifactId>com.gxlu.interfacePlatform.schedule.hibernate.derby</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>oracle.jdbc.driver</groupId>
+			<artifactId>OracleDriver</artifactId>
+			<version>1.4</version>
+		</dependency>
+	</dependencies>
+	<build>
+
+		<plugins>
+
+			<plugin>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<configuration>
+					<descriptors>
+						<descriptor>src/main/assemble/schedule-derby.xml</descriptor>
+						<descriptor>src/main/assemble/schedule-oracle.xml</descriptor>
+						<!-- <descriptor>src/main/assemble/descriptor-with-jre.xml</descriptor> -->
+					</descriptors>
+				</configuration>
+				<executions>
+					<execution>
+						<id>make-assembly</id> <!-- this is used for inheritance merges -->
+						<phase>install</phase> <!-- bind to the deploy phase -->
+						<goals>
+							<goal>single</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+</project>

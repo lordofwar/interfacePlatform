@@ -1,0 +1,4 @@
+<Server rmiPort="9000" wsContextPath="http://localhost:8080">
+	<Type>MAIN</Type><!-- Type= MAIN|SUB -->
+	<Description>This is the default description.</Description>
+</Server>

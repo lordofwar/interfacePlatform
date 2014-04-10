@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Services>
+	<!-- <Service path="/serviceSchedule" class="" /> -->
+	<!-- RMI Schedule Expending API -->
+	<Service path="Operation" class="com.gxlu.interfacePlatform.server.webservice.services.ServerOperationImpl"></Service>
+</Services>

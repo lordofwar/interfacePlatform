@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:sca="http://www.springframework.org/schema/sca"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="
+	   http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+	   http://www.springframework.org/schema/sca http://www.springframework.org/schema/sca/spring-sca.xsd ">
+
+	<!-- sql executor -->
+	<bean id="resultPagination"
+		class="com.gxlu.meta.engine.jdbc.OracleResultPagination">
+	</bean>
+
+	<bean id="sqlExecutor"
+		class="com.gxlu.meta.engine.jdbc.SpringJdbcSqlExecutor">
+		<property name="dataSource" ref="dataSource" />
+		<property name="printSql" value="true" />
+		<property name="resultPagination" ref="resultPagination" />
+	</bean>
+
+	<bean id="metaClassManager"
+		class="com.gxlu.meta.MetaClassManagerImpl">
+		<property name="sqlExecutor" ref="sqlExecutor" />
+	</bean>
+
+	<bean id="persister"
+		class="com.gxlu.meta.engine.persister.entity.EntityPersister">
+		<property name="sqlExecutor" ref="sqlExecutor" />
+		<property name="metaClassManager" ref="metaClassManager" />
+	</bean>
+
+	<bean id="metaDBManager" class="com.gxlu.meta.MetaDBManagerImpl">
+		<property name="persister" ref="persister" />
+		<property name="metaClassManager" ref="metaClassManager" />
+	</bean>
+
+	<!-- 缓存 -->
+
+	<!-- 
+		<bean id="metaDBManager"
+		class="org.springframework.aop.framework.ProxyFactoryBean">
+		
+		<property name="target">
+		<bean class="com.gxlu.meta.MetaDBManagerImpl">
+		<property name="persister" ref="persister" />
+		<property name="metaClassManager" ref="metaClassManager" />
+		</bean>
+		</property>
+		<property name="interceptorNames">
+		<list>
+		<value>methodCachePointCut</value> 
+		</list>
+		</property>
+		</bean>
+	-->
+	<bean id="metaDBManagerProxy"
+		class="org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator">
+		<property name="interceptorNames">
+			<list>
+				<idref local="methodCacheInterceptor" />
+			</list>
+		</property>
+		<property name="beanNames">
+			<list>
+				<value>metaDBManager</value>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="methodCacheInterceptor"
+		class="com.gxlu.meta.cache.MethodCacheInterceptor">
+		<property name="cacheManager">
+			<ref local="commonCacheManager" />
+		</property>
+	</bean>
+	<bean id="commonCacheManager"
+		class="com.gxlu.meta.cache.CacheManager">
+		<property name="dictionaryCache">
+			<ref local="dictionaryCache" />
+		</property>
+	</bean>
+	<bean id="methodCachePointCut"
+		class="org.springframework.aop.support.RegexpMethodPointcutAdvisor">
+		<property name="advice">
+			<ref local="methodCacheInterceptor" />
+		</property>
+		<property name="patterns">
+			<list>
+				<value>query</value>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="metaEhCacheManager"
+		class="org.springframework.cache.ehcache.EhCacheManagerFactoryBean">
+		<property name="configLocation">
+			<value>classpath:com/gxlu/meta/cache/ehcache.xml</value>
+		</property>
+	</bean>
+
+	<bean id="dictionaryCache"
+		class="org.springframework.cache.ehcache.EhCacheFactoryBean">
+		<property name="cacheManager">
+			<ref local="metaEhCacheManager" />
+		</property>
+		<property name="cacheName">
+			<value>dictionaryCache</value>
+		</property>
+	</bean>
+</beans>

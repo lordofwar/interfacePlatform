@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:sca="http://www.springframework.org/schema/sca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+	   http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+	   http://www.springframework.org/schema/sca http://www.springframework.org/schema/sca/spring-sca.xsd
+	   ">
+	
+	<!-- 将RMI服务暴露到对外统一的JNDI服务器上 -->
+	<bean id="metaplatformLocalServiceLoader"
+		class="com.gxlu.ngrm.system.client.desktop.service.LocalServiceLoader">
+		<property name="serviceImplClassMap">
+			<map>
+				<entry key="metaplatform/MetaPlatformService">
+					<ref bean="metaPlatformService" />
+				</entry>
+			</map>
+		</property>
+	</bean>
+</beans>

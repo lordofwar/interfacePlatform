@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+<session-factory>
+	<property name="connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+	<property name="connection.url">jdbc:oracle:thin:@172.17.11.151:1521:SDH</property>
+	<property name="connection.username">imstelant0120</property>
+	<property name="connection.password">imstelant0120</property>
+	<property name="hibernate.default_schema">imstelant0120</property>  
+	<property name="hibernate.dialect">org.hibernate.dialect.OracleDialect</property>
+	<property name="current_session_context_class">thread</property>  
+	<property name="hbm2ddl.auto">validate</property>  
+	<property name="show_sql">true</property>
+	
+	<mapping resource="com/gxlu/interfacePlatform/database/hibernate/Schedule.hbm.xml"/>
+	<mapping resource="com/gxlu/interfacePlatform/database/hibernate/ScheduleLog.hbm.xml"/>
+	<mapping resource="com/gxlu/interfacePlatform/database/hibernate/InterfaceLib.hbm.xml"/>
+	<mapping resource="com/gxlu/interfacePlatform/database/hibernate/XDictionary.hbm.xml"/>
+	<mapping resource="com/gxlu/interfacePlatform/database/hibernate/XbAutodiscoveryrule.hbm.xml"/>
+	<mapping resource="com/gxlu/interfacePlatform/database/hibernate/XbAlertrule.hbm.xml"/>
+	<mapping resource="com/gxlu/interfacePlatform/database/hibernate/XAutodisinterface.hbm.xml"/>
+</session-factory>
+</hibernate-configuration>

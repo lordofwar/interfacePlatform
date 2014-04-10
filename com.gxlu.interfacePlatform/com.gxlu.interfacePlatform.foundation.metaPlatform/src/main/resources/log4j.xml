@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>     
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<log4j:configuration xmlns:log4j='http://jakarta.apache.org/log4j/'>
+
+	<appender name="ConsoleAppender" class="org.apache.log4j.ConsoleAppender">
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{yyyy-MM-dd hh:mm:ss,SSS\}:%p %c{1} %t - %m%n" />
+		</layout>
+	</appender>
+	
+  <appender name="ASYNC_ConsoleAppender" class="org.apache.log4j.AsyncAppender">   
+     <param name="BufferSize" value="2048"/>   
+     <appender-ref ref="ConsoleAppender"/>
+   </appender>		
+
+	<!-- for default log -->
+	<appender name="CollectionFileAppender" class="org.apache.log4j.RollingFileAppender">
+		<param name="Append" value="false" />
+		<param name="MaxFileSize" value="200MB" />
+		<!-- for development environment -->
+		<param name="File" value="./telant.log" />
+		<!-- for product environment within WebLogic -->
+		<!-- 
+		<param name="File" value="./log/telant.log" />
+		 -->
+		<param name="MaxBackupIndex" value="500" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{yyyy-MM-dd hh:mm:ss,SSS\}:%p %t - %m%n" />
+		</layout>
+	</appender>
+
+	<!-- only for Hibernate SQL log -->
+	<appender name="HibernateSQLFileAppender" class="org.apache.log4j.RollingFileAppender">
+		<param name="Append" value="false" />
+		<param name="MaxFileSize" value="200MB" />
+
+		<!-- for development environment -->
+		<param name="File" value="./hibernateSQL.log" />
+		<!-- for product environment within WebLogic -->
+		<!-- 
+		<param name="File" value="./log/hibernateSQL.log" />
+		 -->
+
+		<param name="MaxBackupIndex" value="500" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{yyyy-MM-dd hh:mm:ss,SSS\}:%p %t - %m%n" />
+		</layout>
+	</appender>
+
+	<!-- only for meta SQL log -->
+	<appender name="MetaSQLFileAppender" class="org.apache.log4j.RollingFileAppender">
+		<param name="Append" value="false" />
+		<param name="MaxFileSize" value="200MB" />
+
+		<!-- for development environment -->
+		<param name="File" value="./telantSQL.log" />
+		<!-- for product environment within WebLogic -->
+		<!-- 
+		<param name="File" value="../log/telantSQL.log" />
+		 -->
+
+		<param name="MaxBackupIndex" value="500" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{yyyy-MM-dd hh:mm:ss,SSS\}:%p %t - %m%n" />
+		</layout>
+	</appender>
+
+	
+	
+	<appender name="PFOrderAppender" class="org.apache.log4j.RollingFileAppender">
+		<param name="Append" value="true" />
+		<param name="MaxFileSize" value="200MB" />
+		<param name="File" value="pf-order.log" />
+		<param name="MaxBackupIndex" value="500" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{yyyy-MM-dd hh:mm:ss,SSS\}:%p %t - %m%n" />
+		</layout>
+	</appender>
+	
+	<logger name="org" additivity="false">
+		<level value="error" />
+		
+		<!-- for development environment -->
+		<appender-ref ref="ConsoleAppender" />
+		
+		<appender-ref ref="CollectionFileAppender" />
+	</logger>
+
+	<logger name="com" additivity="false">
+		<level value="error" />
+		
+		<!-- for development environment -->
+		<appender-ref ref="ConsoleAppender" />
+		
+		<appender-ref ref="CollectionFileAppender" />
+	</logger>
+
+	<logger name="org.hibernate.SQL" additivity="false">
+		<level value="debug" />
+
+		<appender-ref ref="HibernateSQLFileAppender" />
+
+		<!-- for development environment -->
+		<appender-ref ref="ConsoleAppender" />
+		
+		<appender-ref ref="CollectionFileAppender" />
+	</logger>
+	
+	<!-- 
+	<logger name="org.springframework.jdbc" additivity="false">
+		<level value="info" />
+		
+	
+		<appender-ref ref="ConsoleAppender" />
+		
+		<appender-ref ref="CollectionFileAppender" />
+	</logger>	
+	 -->
+	 
+	<logger name="org.springframework.transaction" additivity="false">
+		<level value="info" />
+		
+		<!-- for development environment -->
+		<appender-ref ref="ConsoleAppender" />
+		
+		<appender-ref ref="CollectionFileAppender" />
+	</logger>	
+	
+	<logger name="org.springframework.transaction.interceptor.TransactionInterceptor" additivity="false">
+		<level value="debug" />
+		
+		<!-- for development environment -->
+		<appender-ref ref="ConsoleAppender" />
+		
+		<appender-ref ref="CollectionFileAppender" />
+	</logger>	
+	
+	<!-- 
+	<logger name="org.springframework.transaction.support.TransactionSynchronizationManager" additivity="false">
+		<level value="debug" />
+
+		<appender-ref ref="ConsoleAppender" />
+		
+		<appender-ref ref="CollectionFileAppender" />
+	</logger>			
+ 	-->
+	
+	<logger name="com.gxlu.ngrm.external" additivity="false">
+		<level value="info" />
+		<appender-ref ref="ConsoleAppender" />
+		<appender-ref ref="PFOrderAppender" />
+	</logger>
+ 	
+	<logger name="com.gxlu" additivity="false">
+		<level value="info" />
+		
+		<!-- for development environment -->
+		<appender-ref ref="ConsoleAppender" />
+		
+		<appender-ref ref="CollectionFileAppender" />
+	</logger>
+
+
+	<logger name="com.gxlu.meta.engine.jdbc" additivity="false">
+		<level value="debug" />
+		<appender-ref ref="MetaSQLFileAppender" />
+
+		<!-- for development environment -->
+		<appender-ref ref="ConsoleAppender" />
+		
+		<appender-ref ref="CollectionFileAppender" />
+	</logger>
+
+
+	<root>
+		<level value="error" />
+		
+		<!-- for development environment -->
+		<appender-ref ref="ConsoleAppender" />
+		
+		<appender-ref ref="CollectionFileAppender" />
+	</root>
+</log4j:configuration>

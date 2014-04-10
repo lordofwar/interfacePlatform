@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.gxlu.interfacePlatform.database.bean">
+	<class name="com.gxlu.interfacePlatform.database.bean.ScheduleLog" table="XB_interface_ScheduleLog" >
+		<id name="id" column="ID">
+			<generator class="native" >
+				<param name="sequence">s_Xb_Interface_Schedulelog</param>
+			</generator>
+		</id>
+		<property name="metacategory" column="METACATEGORY"></property>
+		<property name="interfacelibid" column="INTERFACELIBID"></property>
+		<property name="type" column="TYPE"></property>
+		<property name="userName" column="USERNAME"></property>
+		<property name="loginName" column="LOGINNAME"></property>
+		<property name="category" column="CATEGORY"></property>
+		<property name="startedTime" column="STARTEDTIME"></property>
+		<property name="finishedTime" column="FINISHEDTIME" ></property>
+		<property name="status" column="STATUS"></property>
+		<property name="failedReason" column="FAILEDREASON"></property>
+		<property name="version" column="VERSION"></property>
+		<property name="detailLog" column="DETAILLOG"></property>
+	</class>
+</hibernate-mapping>

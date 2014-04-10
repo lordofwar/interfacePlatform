@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<composite xmlns="http://www.osoa.org/xmlns/sca/1.0" name="code">
+
+	<component name="masterService">
+        <implementation.spring location="metaplatform-context.xml" />
+        <service name="masterServiceInSpring" />
+    </component>
+    
+</composite>

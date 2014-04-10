@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.gxlu.interfacePlatform.database.bean">
+	<class name="com.gxlu.interfacePlatform.database.bean.InterfaceLib" table="XB_Interface_interfacelib" >
+		<id name="id" column="ID">
+			<generator class="native" >
+				<param name="sequence">s_XB_Interface_interfacelib</param>
+			</generator>
+		</id>
+		<property name="metacategory" column="METACATEGORY"></property>
+		<property name="code" column="CODE"></property>
+		<property name="type" column="TYPE"></property>
+		<property name="description" column="DESCRIPTION"></property>
+		<property name="isActive" column="ISACTIVE" ></property>
+		<property name="isloadingDetaillog" column="ISLOADINGDETAILLOG"></property>
+		<property name="version" column="VERSION"></property>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,358 @@
+[INFO][AWT-EventQueue-0]2012-11-12 20:52:56,531 | -----------	开始启动计划任务		------------
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 20:52:56,609 | ----------开始处理服务华为LLPM插取数据接口--------------
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 20:52:56,640 | 执行任务华为LLPM插取数据接口完毕，总共消耗时间0
+ [INFO][DefaultQuartzScheduler_Worker-2]2012-11-12 20:53:02,593 | ----------开始处理服务华为LLPM插取数据接口--------------
+ [INFO][DefaultQuartzScheduler_Worker-2]2012-11-12 20:53:02,593 | 执行任务华为LLPM插取数据接口完毕，总共消耗时间0
+ [INFO][DefaultQuartzScheduler_Worker-3]2012-11-12 20:53:08,593 | ----------开始处理服务华为LLPM插取数据接口--------------
+ [INFO][DefaultQuartzScheduler_Worker-3]2012-11-12 20:53:08,593 | 执行任务华为LLPM插取数据接口完毕，总共消耗时间0
+ [INFO][AWT-EventQueue-0]2012-11-12 22:31:12,281 | -----------	开始启动计划任务		------------
+ [INFO][AWT-EventQueue-0]2012-11-12 22:31:38,531 | -----------	开始启动计划任务		------------
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:31:38,546 | ----------开始处理服务[华为LLPM插取数据接口]--------------
+ [ERROR][DefaultQuartzScheduler_Worker-1]2012-11-12 22:31:38,562 | init() parse xml exception.
+ java.lang.IllegalArgumentException: InputStream cannot be null
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
+	at com.gxlu.interfacePlatform.foundation.ftp.component.FTPContext.initSites(FTPContext.java:86)
+	at com.gxlu.interfacePlatform.foundation.ftp.component.FTPContext.<init>(FTPContext.java:60)
+	at com.gxlu.interfacePlatform.foundation.ftp.component.FTPContext.getInstance(FTPContext.java:50)
+	at com.gxlu.interfacePlatform.internatoinal.ftp.trans.llpm.HuaWeiSchedule.doAction(HuaWeiSchedule.java:30)
+	at com.gxlu.interfacePlatform.schedule.ScheduleHandler2QuartzAdaptor.execute(ScheduleHandler2QuartzAdaptor.java:33)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:549)
+[ERROR][DefaultQuartzScheduler_Worker-1]2012-11-12 22:31:38,562 | ERROR: SITE_FTP_LLPM_HUAWEI'FTP site is not found! 
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:31:38,562 | 获取FTPsite失败，数据处理结束！
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:31:38,562 | 执行任务[华为LLPM插取数据接口]完毕，总共消耗时间16
+ [INFO][DefaultQuartzScheduler_Worker-2]2012-11-12 22:31:44,546 | ----------开始处理服务[华为LLPM插取数据接口]--------------
+ [ERROR][DefaultQuartzScheduler_Worker-2]2012-11-12 22:31:44,546 | ERROR: SITE_FTP_LLPM_HUAWEI'FTP site is not found! 
+ [INFO][DefaultQuartzScheduler_Worker-2]2012-11-12 22:31:44,546 | 获取FTPsite失败，数据处理结束！
+ [INFO][DefaultQuartzScheduler_Worker-2]2012-11-12 22:31:44,546 | 执行任务[华为LLPM插取数据接口]完毕，总共消耗时间0
+ [INFO][DefaultQuartzScheduler_Worker-3]2012-11-12 22:31:50,546 | ----------开始处理服务[华为LLPM插取数据接口]--------------
+ [ERROR][DefaultQuartzScheduler_Worker-3]2012-11-12 22:31:50,546 | ERROR: SITE_FTP_LLPM_HUAWEI'FTP site is not found! 
+ [INFO][DefaultQuartzScheduler_Worker-3]2012-11-12 22:31:50,546 | 获取FTPsite失败，数据处理结束！
+ [INFO][DefaultQuartzScheduler_Worker-3]2012-11-12 22:31:50,546 | 执行任务[华为LLPM插取数据接口]完毕，总共消耗时间0
+ [INFO][AWT-EventQueue-0]2012-11-12 22:51:54,000 | -----------	开始启动计划任务		------------
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:51:54,140 | ----------开始处理服务[华为LLPM插取数据接口]--------------
+ [INFO][DefaultQuartzScheduler_Worker-2]2012-11-12 22:52:00,125 | ----------开始处理服务[华为LLPM插取数据接口]--------------
+ [INFO][DefaultQuartzScheduler_Worker-3]2012-11-12 22:52:06,140 | ----------开始处理服务[华为LLPM插取数据接口]--------------
+ [INFO][AWT-EventQueue-0]2012-11-12 22:56:34,296 | -----------	开始启动计划任务		------------
+ [INFO][AWT-EventQueue-0]2012-11-12 22:56:49,078 | -----------	开始启动计划任务		------------
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:56:49,093 | ----------开始处理服务[华为LLPM插取数据接口]--------------
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:56:52,078 | ----------开始解析文件：CARD@llpm.csv-----------
+ [FATAL][DefaultQuartzScheduler_Worker-1]2012-11-12 22:56:52,078 | java.lang.IllegalArgumentException: parameter inputStream is invalid
+ [ERROR][DefaultQuartzScheduler_Worker-1]2012-11-12 22:56:52,078 | java.lang.IllegalArgumentException: parameter is invalid
+ [ERROR][DefaultQuartzScheduler_Worker-1]2012-11-12 22:56:52,078 | no db configurator found, pls check config file!
+ [ERROR][DefaultQuartzScheduler_Worker-1]2012-11-12 22:56:52,078 | getConnection error : The url cannot be null
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:56:52,093 | 持久化文件： CARD@llpm.csv第1次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:56:52,093 | 持久化文件： CARD@llpm.csv第2次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:56:52,109 | 持久化文件： CARD@llpm.csv第3次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:56:52,109 | 持久化文件： CARD@llpm.csv第4次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:56:52,109 | 持久化文件： CARD@llpm.csv第5次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:56:52,125 | 持久化文件： CARD@llpm.csv第6次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:56:52,125 | 持久化文件： CARD@llpm.csv第7次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:56:52,125 | 持久化文件： CARD@llpm.csv第8次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:56:52,140 | 持久化文件： CARD@llpm.csv第9次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:56:52,140 | 持久化文件： CARD@llpm.csv第10次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:56:52,156 | 持久化文件： CARD@llpm.csv第11次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:56:52,156 | 持久化文件： CARD@llpm.csv第12次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:56:52,156 | 持久化文件： CARD@llpm.csv第13次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:56:52,171 | 持久化文件： CARD@llpm.csv第14次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:56:52,171 | 持久化文件： CARD@llpm.csv第15次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:56:52,171 | 持久化文件： CARD@llpm.csv第16次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:56:52,171 | 持久化文件： CARD@llpm.csv第17次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:56:52,187 | 持久化文件： CARD@llpm.csv第18次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:56:52,187 | 持久化文件： CARD@llpm.csv第19次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:56:52,187 | 持久化文件： CARD@llpm.csv第20次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:56:52,203 | 持久化文件： CARD@llpm.csv第21次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:56:52,203 | 持久化文件： CARD@llpm.csv第22次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:56:52,234 | 持久化文件： CARD@llpm.csv第23次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:56:52,234 | 持久化文件： CARD@llpm.csv第24次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:56:52,250 | 持久化文件： CARD@llpm.csv第25次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:56:52,296 | 持久化文件： CARD@llpm.csv第26次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:56:52,296 | 持久化文件： CARD@llpm.csv第27次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:56:52,296 | 持久化文件： CARD@llpm.csv第28次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:56:52,312 | 持久化文件： CARD@llpm.csv第29次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:56:52,312 | 持久化文件： CARD@llpm.csv第30次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:56:52,312 | 持久化文件： CARD@llpm.csv第31次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:56:52,343 | 持久化文件： CARD@llpm.csv第32次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:56:52,343 | 持久化文件： CARD@llpm.csv第33次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:56:52,359 | 持久化文件： CARD@llpm.csv第34次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:56:52,359 | 持久化文件： CARD@llpm.csv第35次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:56:52,359 | 持久化文件： CARD@llpm.csv第36次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:56:52,359 | 持久化文件： CARD@llpm.csv第37次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:56:52,375 | 持久化文件： CARD@llpm.csv第38次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:56:52,390 | 持久化文件： CARD@llpm.csv第39次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:56:52,390 | 持久化文件： CARD@llpm.csv第40次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:56:52,390 | 持久化文件： CARD@llpm.csv第41次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:56:52,406 | 持久化文件： CARD@llpm.csv第42次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:56:52,406 | 持久化文件： CARD@llpm.csv第43次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:56:52,406 | 持久化文件： CARD@llpm.csv第44次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:56:52,484 | 持久化文件： CARD@llpm.csv第45次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:56:52,500 | 持久化文件： CARD@llpm.csv第46次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:56:52,500 | ----------------持久化文件：CARD@llpm.csv结束-----------------
+ [INFO][AWT-EventQueue-0]2012-11-12 22:59:00,656 | -----------	开始启动计划任务		------------
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:59:00,781 | ----------开始处理服务[华为LLPM插取数据接口]--------------
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:59:03,812 | ----------开始解析文件：CARD@llpm.csv-----------
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:59:03,828 | 
+DataSource : oracle.jdbc.pool.OracleDataSource
+Driver : oracle.jdbc.driver.OracleDriver
+URL : jdbc:oracle:thin:@172.17.11.62:1521:sdh
+User : gjhtlseed
+Password : gjhtlseed
+dbType : oracle
+ [ERROR][DefaultQuartzScheduler_Worker-1]2012-11-12 22:59:03,828 | load db driver error : oracle.jdbc.driver.OracleDriver
+ [ERROR][DefaultQuartzScheduler_Worker-1]2012-11-12 22:59:03,828 | getConnection error : No suitable driver found for jdbc:oracle:thin:@172.17.11.62:1521:sdh
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:59:03,843 | 持久化文件： CARD@llpm.csv第1次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:59:03,859 | 持久化文件： CARD@llpm.csv第2次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:59:03,859 | 持久化文件： CARD@llpm.csv第3次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:59:03,875 | 持久化文件： CARD@llpm.csv第4次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:59:03,875 | 持久化文件： CARD@llpm.csv第5次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:59:03,875 | 持久化文件： CARD@llpm.csv第6次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:59:03,875 | 持久化文件： CARD@llpm.csv第7次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:59:03,890 | 持久化文件： CARD@llpm.csv第8次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:59:03,906 | 持久化文件： CARD@llpm.csv第9次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:59:03,906 | 持久化文件： CARD@llpm.csv第10次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:59:03,906 | 持久化文件： CARD@llpm.csv第11次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:59:03,921 | 持久化文件： CARD@llpm.csv第12次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:59:03,937 | 持久化文件： CARD@llpm.csv第13次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:59:03,937 | 持久化文件： CARD@llpm.csv第14次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:59:03,937 | 持久化文件： CARD@llpm.csv第15次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:59:03,953 | 持久化文件： CARD@llpm.csv第16次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:59:03,953 | 持久化文件： CARD@llpm.csv第17次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:59:03,968 | 持久化文件： CARD@llpm.csv第18次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:59:03,984 | 持久化文件： CARD@llpm.csv第19次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:59:03,984 | 持久化文件： CARD@llpm.csv第20次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:59:04,000 | 持久化文件： CARD@llpm.csv第21次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:59:04,000 | 持久化文件： CARD@llpm.csv第22次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:59:04,015 | 持久化文件： CARD@llpm.csv第23次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:59:04,015 | 持久化文件： CARD@llpm.csv第24次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:59:04,015 | 持久化文件： CARD@llpm.csv第25次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:59:04,031 | 持久化文件： CARD@llpm.csv第26次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:59:04,031 | 持久化文件： CARD@llpm.csv第27次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:59:04,031 | 持久化文件： CARD@llpm.csv第28次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:59:04,031 | 持久化文件： CARD@llpm.csv第29次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:59:04,046 | 持久化文件： CARD@llpm.csv第30次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:59:04,046 | 持久化文件： CARD@llpm.csv第31次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:59:04,046 | 持久化文件： CARD@llpm.csv第32次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:59:04,062 | 持久化文件： CARD@llpm.csv第33次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:59:04,062 | 持久化文件： CARD@llpm.csv第34次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:59:04,062 | 持久化文件： CARD@llpm.csv第35次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:59:04,062 | 持久化文件： CARD@llpm.csv第36次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:59:04,093 | 持久化文件： CARD@llpm.csv第37次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:59:04,093 | 持久化文件： CARD@llpm.csv第38次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:59:04,093 | 持久化文件： CARD@llpm.csv第39次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:59:04,109 | 持久化文件： CARD@llpm.csv第40次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:59:04,125 | 持久化文件： CARD@llpm.csv第41次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:59:04,140 | 持久化文件： CARD@llpm.csv第42次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:59:04,187 | 持久化文件： CARD@llpm.csv第43次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:59:04,203 | 持久化文件： CARD@llpm.csv第44次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:59:04,203 | 持久化文件： CARD@llpm.csv第45次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:59:04,203 | 持久化文件： CARD@llpm.csv第46次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 22:59:04,203 | ----------------持久化文件：CARD@llpm.csv结束-----------------
+ [INFO][AWT-EventQueue-0]2012-11-12 23:00:29,359 | -----------	开始启动计划任务		------------
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:00:59,687 | ----------开始处理服务[华为LLPM插取数据接口]--------------
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:01:30,703 | ----------开始解析文件：CARD@llpm.csv-----------
+ [INFO][AWT-EventQueue-0]2012-11-12 23:03:34,265 | -----------	开始启动计划任务		------------
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:03:49,515 | ----------开始处理服务[华为LLPM插取数据接口]--------------
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:03:54,000 | ----------开始解析文件：CARD@llpm.csv-----------
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:07:23,218 | 
+DataSource : oracle.jdbc.pool.OracleDataSource
+Driver : oracle.jdbc.driver.OracleDriver
+URL : jdbc:oracle:thin:@172.17.11.62:1521:sdh
+User : gjhtlseed
+Password : gjhtlseed
+dbType : oracle
+ [INFO][AWT-EventQueue-0]2012-11-12 23:12:15,062 | -----------	开始启动计划任务		------------
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:15,250 | ----------开始处理服务[华为LLPM插取数据接口]--------------
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:28,125 | ----------开始解析文件：CARD@llpm.csv-----------
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:28,140 | 
+DataSource : oracle.jdbc.pool.OracleDataSource
+Driver : oracle.jdbc.driver.OracleDriver
+URL : jdbc:oracle:thin:@172.17.11.62:1521:sdh
+User : gjhtlseed
+Password : gjhtlseed
+dbType : oracle
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:29,140 | 持久化文件： CARD@llpm.csv第1次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:29,140 | ---开始处理数据库持久化---
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:29,140 | ---生成 SQL:	insert into XB_EMS_TN_CARD(ID,NAME, NATIVEEMSNAME, SERVICESTATE, OBJECTTYPE, SWVERSION) values(S_XB_EMS_TN_CARD.nextval,?, ?, ?, ?, ?)
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:29,781 | 处理数据库持久化END
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:29,796 | 持久化文件： CARD@llpm.csv第2次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:29,796 | ---开始处理数据库持久化---
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:29,796 | ---生成 SQL:	insert into XB_EMS_TN_CARD(ID,NAME, NATIVEEMSNAME, SERVICESTATE, OBJECTTYPE, SWVERSION) values(S_XB_EMS_TN_CARD.nextval,?, ?, ?, ?, ?)
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:29,890 | 处理数据库持久化END
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:29,890 | 持久化文件： CARD@llpm.csv第3次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:29,890 | ---开始处理数据库持久化---
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:29,890 | ---生成 SQL:	insert into XB_EMS_TN_CARD(ID,NAME, NATIVEEMSNAME, SERVICESTATE, OBJECTTYPE, SWVERSION) values(S_XB_EMS_TN_CARD.nextval,?, ?, ?, ?, ?)
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:29,968 | 处理数据库持久化END
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:29,968 | 持久化文件： CARD@llpm.csv第4次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:29,968 | ---开始处理数据库持久化---
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:29,968 | ---生成 SQL:	insert into XB_EMS_TN_CARD(ID,NAME, NATIVEEMSNAME, SERVICESTATE, OBJECTTYPE, SWVERSION) values(S_XB_EMS_TN_CARD.nextval,?, ?, ?, ?, ?)
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:30,046 | 处理数据库持久化END
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:30,046 | 持久化文件： CARD@llpm.csv第5次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:30,046 | ---开始处理数据库持久化---
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:30,046 | ---生成 SQL:	insert into XB_EMS_TN_CARD(ID,NAME, NATIVEEMSNAME, SERVICESTATE, OBJECTTYPE, SWVERSION) values(S_XB_EMS_TN_CARD.nextval,?, ?, ?, ?, ?)
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:30,125 | 处理数据库持久化END
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:30,125 | 持久化文件： CARD@llpm.csv第6次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:30,125 | ---开始处理数据库持久化---
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:30,125 | ---生成 SQL:	insert into XB_EMS_TN_CARD(ID,NAME, NATIVEEMSNAME, SERVICESTATE, OBJECTTYPE, SWVERSION) values(S_XB_EMS_TN_CARD.nextval,?, ?, ?, ?, ?)
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:30,203 | 处理数据库持久化END
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:30,203 | 持久化文件： CARD@llpm.csv第7次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:30,203 | ---开始处理数据库持久化---
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:30,203 | ---生成 SQL:	insert into XB_EMS_TN_CARD(ID,NAME, NATIVEEMSNAME, SERVICESTATE, OBJECTTYPE, SWVERSION) values(S_XB_EMS_TN_CARD.nextval,?, ?, ?, ?, ?)
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:30,281 | 处理数据库持久化END
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:30,296 | 持久化文件： CARD@llpm.csv第8次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:30,296 | ---开始处理数据库持久化---
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:30,296 | ---生成 SQL:	insert into XB_EMS_TN_CARD(ID,NAME, NATIVEEMSNAME, SERVICESTATE, OBJECTTYPE, SWVERSION) values(S_XB_EMS_TN_CARD.nextval,?, ?, ?, ?, ?)
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:30,359 | 处理数据库持久化END
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:30,359 | 持久化文件： CARD@llpm.csv第9次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:30,375 | ---开始处理数据库持久化---
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:30,375 | ---生成 SQL:	insert into XB_EMS_TN_CARD(ID,NAME, NATIVEEMSNAME, SERVICESTATE, OBJECTTYPE, SWVERSION) values(S_XB_EMS_TN_CARD.nextval,?, ?, ?, ?, ?)
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:30,453 | 处理数据库持久化END
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:30,468 | 持久化文件： CARD@llpm.csv第10次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:30,468 | ---开始处理数据库持久化---
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:30,468 | ---生成 SQL:	insert into XB_EMS_TN_CARD(ID,NAME, NATIVEEMSNAME, SERVICESTATE, OBJECTTYPE, SWVERSION) values(S_XB_EMS_TN_CARD.nextval,?, ?, ?, ?, ?)
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:30,531 | 处理数据库持久化END
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:30,546 | 持久化文件： CARD@llpm.csv第11次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:30,546 | ---开始处理数据库持久化---
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:30,546 | ---生成 SQL:	insert into XB_EMS_TN_CARD(ID,NAME, NATIVEEMSNAME, SERVICESTATE, OBJECTTYPE, SWVERSION) values(S_XB_EMS_TN_CARD.nextval,?, ?, ?, ?, ?)
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:30,625 | 处理数据库持久化END
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:30,625 | 持久化文件： CARD@llpm.csv第12次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:30,625 | ---开始处理数据库持久化---
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:30,625 | ---生成 SQL:	insert into XB_EMS_TN_CARD(ID,NAME, NATIVEEMSNAME, SERVICESTATE, OBJECTTYPE, SWVERSION) values(S_XB_EMS_TN_CARD.nextval,?, ?, ?, ?, ?)
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:30,703 | 处理数据库持久化END
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:30,703 | 持久化文件： CARD@llpm.csv第13次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:30,703 | ---开始处理数据库持久化---
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:30,703 | ---生成 SQL:	insert into XB_EMS_TN_CARD(ID,NAME, NATIVEEMSNAME, SERVICESTATE, OBJECTTYPE, SWVERSION) values(S_XB_EMS_TN_CARD.nextval,?, ?, ?, ?, ?)
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:30,781 | 处理数据库持久化END
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:30,781 | 持久化文件： CARD@llpm.csv第14次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:30,781 | ---开始处理数据库持久化---
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:30,781 | ---生成 SQL:	insert into XB_EMS_TN_CARD(ID,NAME, NATIVEEMSNAME, SERVICESTATE, OBJECTTYPE, SWVERSION) values(S_XB_EMS_TN_CARD.nextval,?, ?, ?, ?, ?)
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:30,843 | 处理数据库持久化END
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:30,843 | 持久化文件： CARD@llpm.csv第15次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:30,843 | ---开始处理数据库持久化---
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:30,843 | ---生成 SQL:	insert into XB_EMS_TN_CARD(ID,NAME, NATIVEEMSNAME, SERVICESTATE, OBJECTTYPE, SWVERSION) values(S_XB_EMS_TN_CARD.nextval,?, ?, ?, ?, ?)
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:30,921 | 处理数据库持久化END
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:30,921 | 持久化文件： CARD@llpm.csv第16次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:30,921 | ---开始处理数据库持久化---
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:30,921 | ---生成 SQL:	insert into XB_EMS_TN_CARD(ID,NAME, NATIVEEMSNAME, SERVICESTATE, OBJECTTYPE, SWVERSION) values(S_XB_EMS_TN_CARD.nextval,?, ?, ?, ?, ?)
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:31,000 | 处理数据库持久化END
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:31,000 | 持久化文件： CARD@llpm.csv第17次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:31,000 | ---开始处理数据库持久化---
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:31,000 | ---生成 SQL:	insert into XB_EMS_TN_CARD(ID,NAME, NATIVEEMSNAME, SERVICESTATE, OBJECTTYPE, SWVERSION) values(S_XB_EMS_TN_CARD.nextval,?, ?, ?, ?, ?)
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:31,078 | 处理数据库持久化END
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:31,093 | 持久化文件： CARD@llpm.csv第18次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:31,093 | ---开始处理数据库持久化---
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:31,093 | ---生成 SQL:	insert into XB_EMS_TN_CARD(ID,NAME, NATIVEEMSNAME, SERVICESTATE, OBJECTTYPE, SWVERSION) values(S_XB_EMS_TN_CARD.nextval,?, ?, ?, ?, ?)
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:31,234 | 处理数据库持久化END
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:31,234 | 持久化文件： CARD@llpm.csv第19次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:31,234 | ---开始处理数据库持久化---
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:31,234 | ---生成 SQL:	insert into XB_EMS_TN_CARD(ID,NAME, NATIVEEMSNAME, SERVICESTATE, OBJECTTYPE, SWVERSION) values(S_XB_EMS_TN_CARD.nextval,?, ?, ?, ?, ?)
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:31,328 | 处理数据库持久化END
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:31,328 | 持久化文件： CARD@llpm.csv第20次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:31,328 | ---开始处理数据库持久化---
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:31,328 | ---生成 SQL:	insert into XB_EMS_TN_CARD(ID,NAME, NATIVEEMSNAME, SERVICESTATE, OBJECTTYPE, SWVERSION) values(S_XB_EMS_TN_CARD.nextval,?, ?, ?, ?, ?)
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:31,406 | 处理数据库持久化END
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:31,406 | 持久化文件： CARD@llpm.csv第21次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:31,406 | ---开始处理数据库持久化---
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:31,406 | ---生成 SQL:	insert into XB_EMS_TN_CARD(ID,NAME, NATIVEEMSNAME, SERVICESTATE, OBJECTTYPE, SWVERSION) values(S_XB_EMS_TN_CARD.nextval,?, ?, ?, ?, ?)
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:31,500 | 处理数据库持久化END
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:31,500 | 持久化文件： CARD@llpm.csv第22次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:31,500 | ---开始处理数据库持久化---
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:31,500 | ---生成 SQL:	insert into XB_EMS_TN_CARD(ID,NAME, NATIVEEMSNAME, SERVICESTATE, OBJECTTYPE, SWVERSION) values(S_XB_EMS_TN_CARD.nextval,?, ?, ?, ?, ?)
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:31,593 | 处理数据库持久化END
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:31,593 | 持久化文件： CARD@llpm.csv第23次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:31,593 | ---开始处理数据库持久化---
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:31,593 | ---生成 SQL:	insert into XB_EMS_TN_CARD(ID,NAME, NATIVEEMSNAME, SERVICESTATE, OBJECTTYPE, SWVERSION) values(S_XB_EMS_TN_CARD.nextval,?, ?, ?, ?, ?)
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:31,671 | 处理数据库持久化END
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:31,671 | 持久化文件： CARD@llpm.csv第24次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:31,671 | ---开始处理数据库持久化---
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:31,671 | ---生成 SQL:	insert into XB_EMS_TN_CARD(ID,NAME, NATIVEEMSNAME, SERVICESTATE, OBJECTTYPE, SWVERSION) values(S_XB_EMS_TN_CARD.nextval,?, ?, ?, ?, ?)
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:31,734 | 处理数据库持久化END
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:31,734 | 持久化文件： CARD@llpm.csv第25次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:31,734 | ---开始处理数据库持久化---
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:31,734 | ---生成 SQL:	insert into XB_EMS_TN_CARD(ID,NAME, NATIVEEMSNAME, SERVICESTATE, OBJECTTYPE, SWVERSION) values(S_XB_EMS_TN_CARD.nextval,?, ?, ?, ?, ?)
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:31,812 | 处理数据库持久化END
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:31,812 | 持久化文件： CARD@llpm.csv第26次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:31,812 | ---开始处理数据库持久化---
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:31,812 | ---生成 SQL:	insert into XB_EMS_TN_CARD(ID,NAME, NATIVEEMSNAME, SERVICESTATE, OBJECTTYPE, SWVERSION) values(S_XB_EMS_TN_CARD.nextval,?, ?, ?, ?, ?)
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:31,890 | 处理数据库持久化END
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:31,890 | 持久化文件： CARD@llpm.csv第27次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:31,906 | ---开始处理数据库持久化---
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:31,906 | ---生成 SQL:	insert into XB_EMS_TN_CARD(ID,NAME, NATIVEEMSNAME, SERVICESTATE, OBJECTTYPE, SWVERSION) values(S_XB_EMS_TN_CARD.nextval,?, ?, ?, ?, ?)
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:31,984 | 处理数据库持久化END
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:31,984 | 持久化文件： CARD@llpm.csv第28次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:31,984 | ---开始处理数据库持久化---
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:31,984 | ---生成 SQL:	insert into XB_EMS_TN_CARD(ID,NAME, NATIVEEMSNAME, SERVICESTATE, OBJECTTYPE, SWVERSION) values(S_XB_EMS_TN_CARD.nextval,?, ?, ?, ?, ?)
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:32,062 | 处理数据库持久化END
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:32,062 | 持久化文件： CARD@llpm.csv第29次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:32,062 | ---开始处理数据库持久化---
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:32,062 | ---生成 SQL:	insert into XB_EMS_TN_CARD(ID,NAME, NATIVEEMSNAME, SERVICESTATE, OBJECTTYPE, SWVERSION) values(S_XB_EMS_TN_CARD.nextval,?, ?, ?, ?, ?)
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:32,140 | 处理数据库持久化END
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:32,140 | 持久化文件： CARD@llpm.csv第30次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:32,140 | ---开始处理数据库持久化---
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:32,140 | ---生成 SQL:	insert into XB_EMS_TN_CARD(ID,NAME, NATIVEEMSNAME, SERVICESTATE, OBJECTTYPE, SWVERSION) values(S_XB_EMS_TN_CARD.nextval,?, ?, ?, ?, ?)
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:32,203 | 处理数据库持久化END
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:32,218 | 持久化文件： CARD@llpm.csv第31次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:32,218 | ---开始处理数据库持久化---
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:32,218 | ---生成 SQL:	insert into XB_EMS_TN_CARD(ID,NAME, NATIVEEMSNAME, SERVICESTATE, OBJECTTYPE, SWVERSION) values(S_XB_EMS_TN_CARD.nextval,?, ?, ?, ?, ?)
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:32,281 | 处理数据库持久化END
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:32,281 | 持久化文件： CARD@llpm.csv第32次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:32,281 | ---开始处理数据库持久化---
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:32,281 | ---生成 SQL:	insert into XB_EMS_TN_CARD(ID,NAME, NATIVEEMSNAME, SERVICESTATE, OBJECTTYPE, SWVERSION) values(S_XB_EMS_TN_CARD.nextval,?, ?, ?, ?, ?)
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:32,343 | 处理数据库持久化END
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:32,359 | 持久化文件： CARD@llpm.csv第33次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:32,359 | ---开始处理数据库持久化---
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:32,359 | ---生成 SQL:	insert into XB_EMS_TN_CARD(ID,NAME, NATIVEEMSNAME, SERVICESTATE, OBJECTTYPE, SWVERSION) values(S_XB_EMS_TN_CARD.nextval,?, ?, ?, ?, ?)
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:32,437 | 处理数据库持久化END
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:32,437 | 持久化文件： CARD@llpm.csv第34次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:32,437 | ---开始处理数据库持久化---
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:32,453 | ---生成 SQL:	insert into XB_EMS_TN_CARD(ID,NAME, NATIVEEMSNAME, SERVICESTATE, OBJECTTYPE, SWVERSION) values(S_XB_EMS_TN_CARD.nextval,?, ?, ?, ?, ?)
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:32,531 | 处理数据库持久化END
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:32,546 | 持久化文件： CARD@llpm.csv第35次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:32,546 | ---开始处理数据库持久化---
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:32,546 | ---生成 SQL:	insert into XB_EMS_TN_CARD(ID,NAME, NATIVEEMSNAME, SERVICESTATE, OBJECTTYPE, SWVERSION) values(S_XB_EMS_TN_CARD.nextval,?, ?, ?, ?, ?)
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:32,609 | 处理数据库持久化END
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:32,625 | 持久化文件： CARD@llpm.csv第36次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:32,625 | ---开始处理数据库持久化---
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:32,625 | ---生成 SQL:	insert into XB_EMS_TN_CARD(ID,NAME, NATIVEEMSNAME, SERVICESTATE, OBJECTTYPE, SWVERSION) values(S_XB_EMS_TN_CARD.nextval,?, ?, ?, ?, ?)
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:32,687 | 处理数据库持久化END
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:32,687 | 持久化文件： CARD@llpm.csv第37次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:32,687 | ---开始处理数据库持久化---
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:32,687 | ---生成 SQL:	insert into XB_EMS_TN_CARD(ID,NAME, NATIVEEMSNAME, SERVICESTATE, OBJECTTYPE, SWVERSION) values(S_XB_EMS_TN_CARD.nextval,?, ?, ?, ?, ?)
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:32,765 | 处理数据库持久化END
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:32,765 | 持久化文件： CARD@llpm.csv第38次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:32,765 | ---开始处理数据库持久化---
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:32,765 | ---生成 SQL:	insert into XB_EMS_TN_CARD(ID,NAME, NATIVEEMSNAME, SERVICESTATE, OBJECTTYPE, SWVERSION) values(S_XB_EMS_TN_CARD.nextval,?, ?, ?, ?, ?)
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:32,859 | 处理数据库持久化END
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:32,859 | 持久化文件： CARD@llpm.csv第39次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:32,859 | ---开始处理数据库持久化---
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:32,859 | ---生成 SQL:	insert into XB_EMS_TN_CARD(ID,NAME, NATIVEEMSNAME, SERVICESTATE, OBJECTTYPE, SWVERSION) values(S_XB_EMS_TN_CARD.nextval,?, ?, ?, ?, ?)
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:32,937 | 处理数据库持久化END
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:32,937 | 持久化文件： CARD@llpm.csv第40次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:32,937 | ---开始处理数据库持久化---
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:32,937 | ---生成 SQL:	insert into XB_EMS_TN_CARD(ID,NAME, NATIVEEMSNAME, SERVICESTATE, OBJECTTYPE, SWVERSION) values(S_XB_EMS_TN_CARD.nextval,?, ?, ?, ?, ?)
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:33,015 | 处理数据库持久化END
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:33,015 | 持久化文件： CARD@llpm.csv第41次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:33,015 | ---开始处理数据库持久化---
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:33,015 | ---生成 SQL:	insert into XB_EMS_TN_CARD(ID,NAME, NATIVEEMSNAME, SERVICESTATE, OBJECTTYPE, SWVERSION) values(S_XB_EMS_TN_CARD.nextval,?, ?, ?, ?, ?)
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:33,078 | 处理数据库持久化END
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:33,093 | 持久化文件： CARD@llpm.csv第42次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:33,093 | ---开始处理数据库持久化---
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:33,093 | ---生成 SQL:	insert into XB_EMS_TN_CARD(ID,NAME, NATIVEEMSNAME, SERVICESTATE, OBJECTTYPE, SWVERSION) values(S_XB_EMS_TN_CARD.nextval,?, ?, ?, ?, ?)
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:33,156 | 处理数据库持久化END
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:33,156 | 持久化文件： CARD@llpm.csv第43次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:33,156 | ---开始处理数据库持久化---
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:33,156 | ---生成 SQL:	insert into XB_EMS_TN_CARD(ID,NAME, NATIVEEMSNAME, SERVICESTATE, OBJECTTYPE, SWVERSION) values(S_XB_EMS_TN_CARD.nextval,?, ?, ?, ?, ?)
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:33,234 | 处理数据库持久化END
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:33,234 | 持久化文件： CARD@llpm.csv第44次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:33,234 | ---开始处理数据库持久化---
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:33,234 | ---生成 SQL:	insert into XB_EMS_TN_CARD(ID,NAME, NATIVEEMSNAME, SERVICESTATE, OBJECTTYPE, SWVERSION) values(S_XB_EMS_TN_CARD.nextval,?, ?, ?, ?, ?)
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:33,312 | 处理数据库持久化END
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:33,312 | 持久化文件： CARD@llpm.csv第45次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:33,312 | ---开始处理数据库持久化---
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:33,312 | ---生成 SQL:	insert into XB_EMS_TN_CARD(ID,NAME, NATIVEEMSNAME, SERVICESTATE, OBJECTTYPE, SWVERSION) values(S_XB_EMS_TN_CARD.nextval,?, ?, ?, ?, ?)
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:33,390 | 处理数据库持久化END
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:33,390 | 持久化文件： CARD@llpm.csv第46次
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:33,390 | ---开始处理数据库持久化---
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:33,390 | ---生成 SQL:	insert into XB_EMS_TN_CARD(ID,NAME, NATIVEEMSNAME, SERVICESTATE, OBJECTTYPE, SWVERSION) values(S_XB_EMS_TN_CARD.nextval,?, ?, ?, ?, ?)
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:33,390 | 处理数据库持久化END
+ [INFO][DefaultQuartzScheduler_Worker-1]2012-11-12 23:12:33,390 | ----------------持久化文件：CARD@llpm.csv结束-----------------
+ 

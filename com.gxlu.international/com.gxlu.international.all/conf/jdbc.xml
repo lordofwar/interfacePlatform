@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="GB2312"?>
+<etlftp>
+
+	<job>
+	    <file_start_date>20090701</file_start_date>
+		<!--定期更新时间-->
+		<start_date_time>20090731 17:60:20</start_date_time>
+		<!--时间间隔 oneday = 24 * 3600 * 1000-->
+		<interval>1 * 24 * 3600 * 1000</interval>
+	</job>
+	
+	<ftpranhuaweijob>
+		<!-- 是否自动启动定时任务（值为true，或者false） -->
+		<auto_start_job>true</auto_start_job>
+		<!--定期更新时间（格式为："yyyyMMdd hh:mm:ss"）-->
+		<start_date_time>20121029 11:36:20</start_date_time>
+		<!--时间间隔 oneday = 24 * 3600 * 1000-->
+		<interval>1 * 24 * 3600 * 1000</interval>
+	</ftpranhuaweijob>
+	
+	<ftpvassqmjob>
+		<!-- 是否自动启动定时任务（值为true，或者false） -->
+		<auto_start_job>true</auto_start_job>
+		<!--定期更新时间（格式为："yyyyMMdd hh:mm:ss"）-->
+		<start_date_time>20121029 11:07:20</start_date_time>
+		<!--时间间隔 oneday = 24 * 3600 * 1000-->
+		<interval>1 * 24 * 3600 * 1000</interval>
+	</ftpvassqmjob>
+
+	<!-- 数据库配置 -->
+	<database>
+		<!-- <dbtype>oracle</dbtype>
+		<datasource>oracle.jdbc.pool.OracleDataSource</datasource>
+		<url>jdbc:oracle:thin:@132.121.152.93:1521:factdb2</url>
+		<user>telant</user>
+		<password>gdoneoss123</password>
+		<driver>oracle.jdbc.driver.OracleDriver</driver> -->
+		<dbtype>oracle</dbtype>
+		<datasource>oracle.jdbc.pool.OracleDataSource</datasource>
+		<url>jdbc:oracle:thin:@172.17.11.151:1521:sdh</url>
+		<user>imstelant0320</user>
+		<password>imstelant0320</password>
+		<driver>oracle.jdbc.driver.OracleDriver</driver>
+		
+<!--		<dbtype>sybase</dbtype>
+		<url>jdbc:sybase:Tds:172.16.9.158:5000/cz0718</url>
+		<user>cz0718</user>
+		<password>sybase</password>
+		<driver>com.sybase.jdbc3.jdbc.SybDriver</driver>-->
+	</database>
+	
+</etlftp>

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.gxlu.interfacePlatform.schedule">
+	<class name="Schedule" table="Schedule" schema="weibo">
+		<id name="id" column="ID">
+			<generator class="sequence" >
+				<param name="sequence">schedule_sequence</param>
+			</generator>
+		</id>
+		
+		<property name="name" column="NAME"></property>
+		<property name="handlerClassName" column="METACATEGORY"></property>
+		<property name="code" column="code"></property>
+		<property name="startTime" column="startTime"></property>
+		<property name="type" column="type"></property>
+		<property name="interval" column="interval"></property>
+		<property name="status" column="status"></property>
+		<property name="active"  type="java.lang.Boolean" column="isActive"></property>
+		<property name="comments" column="comments"></property>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+	<bean id="dataSource">
+		<property name="driver">oracle.jdbc.driver.OracleDriver</property>
+		<property name="url">jdbc:oracle:thin:@172.30.134.50:1521:sdh</property>
+		<property name="username">imstelant1128</property>
+		<property name="password">imstelant1128</property>
+		<property name="printSql">true</property>
+	</bean>
+</beans>

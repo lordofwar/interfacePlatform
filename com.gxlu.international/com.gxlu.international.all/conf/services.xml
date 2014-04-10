@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Services>
+	<!-- <Service path="/serviceSchedule" class="" /> -->
+	<Service path="/ScheduleService" class="com.gxlu.interfacePlatform.webservice.plugins.ScheduleInterface4WSImpl" />
+	
+	<Service path="/MOSService" class="com.gxlu.interfacePlatform.webservice.plugins.MOSServiceImpl" />
+	<Service path="/IMSCommonService" class="com.gxlu.interfacePlatform.webservice.plugins.IMSCommonApiServiceImpl" />
+	
+	<!-- RMI Schedule Expending API -->
+	<Service path="Operation" class="com.gxlu.interfacePlatform.server.webservice.services.ServerOperationImpl"></Service>
+</Services>

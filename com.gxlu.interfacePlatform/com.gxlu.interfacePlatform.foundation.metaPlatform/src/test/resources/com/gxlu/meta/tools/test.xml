@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="GB2312"?>
+ <beans>
+ 	<bean id="dataSource">
+		<property name="queryMetaClassNames">select * from</property>
+    </bean>
+</beans>

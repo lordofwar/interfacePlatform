@@ -1,0 +1,13 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.gxlu.international</groupId>
+  <artifactId>com.gxlu.international</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <modules>
+  	<module>com.gxlu.international.ftp</module>
+  	<module>com.gxlu.international.jdbc</module>
+  	<module>com.gxlu.international.snmp</module>
+  	<module>com.gxlu.international.fileanalysis</module>
+  </modules>
+</project>

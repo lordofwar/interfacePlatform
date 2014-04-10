@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="GB2312"?>
+<context>
+     <ftp>
+        <!--	
+        code:			FTP站点的唯一标识，可以用来处理多个FTP服务的情况,必填				
+        host:         	FTP的IP地址 （必填）
+        port：        	FTP的端口，不填或者没有该元素，默认为21，选填
+        user：        	FTP的登录用户名， 必填
+        password:     	FTP的登录密码  ， 必填
+        transfertype:   传输类型（BINARY 或 ASCII），默认为ASCII ，选填
+        connectmode:  	连接模式（PASV 或 ACTIVE），默认为PASV，选填
+        directory:   	登录后的工作目录，默认为ftp登录初始目录,可以设置为绝对目录 ，选填
+        encoding : 		字节流编码 ，默认为US-ASCII ，选填
+        timeout : 		FTP SOCKET 连接时间 ，选填
+        -->
+        
+       <site code="GZRESRC">  <!-- 资源当日统计的ftp站点，code是唯一标识,固定 -->
+        	<host>132.96.10.152</host>  
+        	<port>21</port>
+        	<user>catt</user>
+        	<password>Catt123</password>
+        	<transfertype>ASCII</transfertype>
+        	<connectmode>PASV</connectmode>
+        	<encoding>UTF-8</encoding>
+        	<directory>/home/basedate/file/</directory>
+        </site> 
+        
+        <site code="GZRESRC2">  <!-- 资源当日统计的ftp站点2，code是唯一标识,固定 -->
+        	<host>127.0.0.1</host>  
+        	<port>21</port>
+        	<user>gxlu2</user>
+        	<password>gxlu2</password>
+        	<transfertype>BINARY</transfertype>
+        	<connectmode>PASV</connectmode>
+        	<encoding>GB2312</encoding>
+        	<directory>/Test2/</directory>
+        </site> 
+        
+        <site code="GZRESRC_REVERSE">  <!-- 资源当日统计的ftp站点，code是唯一标识,固定 -->
+        	<host>132.96.10.152</host>  
+        	<port>21</port>
+        	<user>datcmp</user>
+        	<password>datcmp123</password>
+        	<transfertype>ASCII</transfertype>
+        	<connectmode>PASV</connectmode>
+        	<encoding>UTF-8</encoding>
+        	<directory>/home/datcmp/</directory>
+        </site> 
+        
+         <!-- FTP RAN 下huawei,…… -->
+          <site code="SITE_FTP_LLPM_HUAWEI"> 
+        	<host>172.17.11.107</host>  
+        	<port>22</port>
+        	<user>llpm</user>
+        	<password>xl1020</password>
+        	<transfertype>BINARY</transfertype>
+        	<connectmode>PASV</connectmode>
+        	<encoding>UTF-8</encoding>
+        	<directory>/home/llpm/nbi/report</directory>
+        </site> 
+        
+        <!-- site code="SITE_FTP_LLPM_HUAWEI"> 
+        	<host>ftpsrv.gxlu.com.cn</host>  
+        	<port>21</port>
+        	<user>ftpuser</user>
+        	<password>ZTR123123ZTR</password>
+        	<transfertype>ASCII</transfertype>
+        	<connectmode>PASV</connectmode>
+        	<encoding>UTF-8</encoding>
+        	<directory>/ftpuser/RSG1/xxm/llpm/</directory>
+        </site-->
+        
+         <site code="SITE_FTP_RAN_HUAWEI"> 
+        	<host>ftpsrv.gxlu.com.cn</host>  
+        	<port>21</port>
+        	<user>ftpuser</user>
+        	<password>ZTR123123ZTR</password>
+        	<transfertype>ASCII</transfertype>
+        	<connectmode>PASV</connectmode>
+        	<encoding>UTF-8</encoding>
+        	<directory>/ftpuser/ftpstoretest/</directory>
+        </site>  
+        <!-- FTP VAS下SQM服务站点 -->
+        <site code="SITE_FTP_VAS_SQM"> 
+        	<host>ftpsrv.gxlu.com.cn</host>  
+        	<port>21</port>
+        	<user>ftpuser</user>
+        	<password>ZTR123123ZTR</password>
+        	<transfertype>ASCII</transfertype>
+        	<connectmode>PASV</connectmode>
+        	<encoding>UTF-8</encoding>
+        	<directory>/ftpuser/ftp_vas_sqm/</directory>
+        </site>  
+                        <!-- 文档管理 -->
+          <site code="SITE_FTP_DOCU_MANAGMENT"> 
+        	<host>172.17.11.24</host>  
+        	<port>21</port>
+        	<user>ftpuser</user>
+        	<password>ZTR123123ZTR</password>
+        	<directory>/ftpuser/ftp_docu_mangment/</directory>
+        </site>
+        
+        <site code="NBI_FTP_NETCOOL"> 
+        	<host>ftpsrv.gxlu.com.cn</host>  
+        	<port>21</port>
+        	<user>ftpuser</user>
+        	<password>ZTR123123ZTR</password>
+        	<transfertype>ASCII</transfertype>
+        	<connectmode>PASV</connectmode>
+        	<encoding>UTF-8</encoding>
+        	<directory>/ftpuser/ftpstoretest/</directory>
+        </site> 
+        
+        <site code="SITE_FTP_AIRCOM"> 
+        	<host>ftpsrv.gxlu.com.cn</host>  
+        	<port>21</port>
+        	<user>ftpuser</user>
+        	<password>ZTR123123ZTR</password>
+        	<transfertype>ASCII</transfertype>
+        	<connectmode>PASV</connectmode>
+        	<encoding>UTF-8</encoding>
+        	<directory>/ftpuser/ftpstoretest/</directory>
+        </site> 
+        
+        <site code="SITE_FTP_MOTS"> 
+        	<host>ftpsrv.gxlu.com.cn</host>  
+        	<port>21</port>
+        	<user>ftpuser</user>
+        	<password>ZTR123123ZTR</password>
+        	<transfertype>BINARY</transfertype>
+        	<connectmode>PASV</connectmode>
+        	<encoding>UTF-8</encoding>
+        	<directory>/ftpuser/ftpstoretest/</directory>
+        </site> 
+        
+        <site code="SITE_FTP_SAP"> 
+        	<host>ftpsrv.gxlu.com.cn</host>  
+        	<port>21</port>
+        	<user>ftpuser</user>
+        	<password>ZTR123123ZTR</password>
+        	<transfertype>ASCII</transfertype>
+        	<connectmode>PASV</connectmode>
+        	<encoding>UTF-8</encoding>
+        	<directory>/ftpuser/ftpstoretest/</directory>
+        </site> 
+        
+        <site code="SITE_FTP_GD_LTE"> 
+        	<host>ftpsrv.gxlu.com.cn</host>  
+        	<port>21</port>
+        	<user>ftpuser</user>
+        	<password>ZTR123123ZTR</password>
+        	<transfertype>BINARY</transfertype>
+        	<connectmode>PASV</connectmode>
+        	<encoding>GBK</encoding>
+        	<directory>/ftpuser/ftpstoretest/GDLTE/华为2014-3-26/</directory>
+        </site> 
+     </ftp>
+</context>

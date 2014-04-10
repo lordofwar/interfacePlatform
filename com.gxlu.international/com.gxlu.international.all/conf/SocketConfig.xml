@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<server>
+		<port>8002</port>
+		<timeout>120000</timeout>
+        <maxthread>50</maxthread>
+	</server>
+	<client>
+		<systemCode>LLPM</systemCode>
+		<ipAddr>172.17.11.107</ipAddr>
+		<port>8002</port>
+		<timeout>0</timeout><!-- 0代表不超时 -->
+		<userName>admin</userName>
+		<passWord>ccssoftng</passWord>
+	</client>
+	<client>
+		<systemCode>test</systemCode>
+		<ipAddr>127.0.0.1</ipAddr>
+		<port>12345</port>
+		<timeout>120000</timeout>
+		<userName>admin</userName>
+		<passWord>ccssoftng</passWord>
+	</client>
+</config>

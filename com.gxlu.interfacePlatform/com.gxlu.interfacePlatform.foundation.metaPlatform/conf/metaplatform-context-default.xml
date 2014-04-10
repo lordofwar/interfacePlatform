@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" 
+	   xmlns:sca="http://www.springframework.org/schema/sca" 
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	   xsi:schemaLocation="
+	   http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+	   http://www.springframework.org/schema/sca http://www.springframework.org/schema/sca/spring-sca.xsd
+	   ">
+    <!-- ++++++++++++++++BASIC INFO++++++++++++++++ -->
+	<!-- 加载配置文件信息 -->
+	<!-- bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="locations">
+        	<list>   
+  				<value>metaplatform.conf</value>    
+  			</list>
+        </property>
+    </bean>
+     -->
+	<!-- ++++++++++++++++IMPORT++++++++++++++++ -->
+ 
+	<import resource="metaplatform-dao.xml" />	
+ 	<import resource="metaplatform-export-context-default.xml" />
+    <!-- ++++++++++++++++SERVICE++++++++++++++++ -->	
+	<!-- 元数据平台服务 -->
+    <bean id="metaPlatformServiceBean" class="com.gxlu.meta.determine.server.service.po.MetaPlatformServiceImpl">
+    	<property name="metaPlatformDao" ref="metaPlatformDao"/>
+    	<property name="versionInstanceService" ref="versionInstanceService"/>
+    	<property name="metaDBManager" ref="metaDBManager"/>
+    	<!-- 
+    	<property name="entityMgtTemplateCache" ref="entityMgtTemplateCacheBean"/>
+    	 -->
+    	<property name="cacheManager" ref="commonCacheManager"/>
+    	<property name="metaClassManager" ref="metaClassManager" />
+	</bean>
+    <bean id="metaPlatformService"
+    	class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+    	<!-- 配置事务管理器 -->
+    	<property name="transactionManager" ref="transactionManager" />
+    	<property name="target" ref="metaPlatformServiceBean" />
+    	<property name="proxyInterfaces"
+    		value="com.gxlu.meta.determine.common.api.service.po.MetaPlatformService" />
+    	<!-- 配置事务属性 -->
+    	<property name="transactionAttributes">
+    		<props>
+    			<prop key="*">PROPAGATION_REQUIRED</prop>
+    		</props>
+    	</property>
+    </bean>
+
+    <bean id="entityMgtTemplateCache" class="org.springframework.cache.ehcache.EhCacheFactoryBean">    
+		<property name="cacheManager">    
+			<ref bean="metaEhCacheManager"/>
+		</property>
+		<property name="cacheName">    
+			<value>entityMgtTemplateCache</value>    
+		</property>
+    </bean>
+    
+    <bean id="entityMgtTemplateCacheBean" class="com.gxlu.meta.client.dorado.MetaDiversifyDataProvider">
+		<property name="cache">
+			<ref local="entityMgtTemplateCache" />
+		</property>
+	</bean>
+
+</beans>

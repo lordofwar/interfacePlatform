@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Services>
+	<!-- <Service path="/serviceSchedule" class="" /> -->
+	<!-- Schedule Manager WebService API. -->
+	<Service path="/scheduleService" class="com.gxlu.interfacePlatform.webservice.plugins.ScheduleInterface4WSImpl" />
+	<Service path="/MOSService" class="com.gxlu.interfacePlatform.webservice.plugins.MOSServiceImpl" />
+	
+	<!-- RMI Schedule Expending API -->
+	<Service path="" class="com.gxlu.interfacePlatform.schedule.rmi.RemoteScheduleImpl"></Service>
+</Services>
